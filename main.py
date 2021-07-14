@@ -15,12 +15,12 @@ tag2 = soup.find_all('a', href=re.compile('entity'))
 
 for i in tag1:
     if len(i.text) > 1:
-        if i.text.lower().startswith('l'):
+        if i.text.lower().startswith('S'):
             links.append(i.text)
 
 for i in tag2:
     if len(i.text) > 1:
-        if i.text.lower().startswith('l'):
+        if i.text.lower().startswith('S'):
             links.append(i.text)
 
 print(links)
